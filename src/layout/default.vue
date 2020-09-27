@@ -1,6 +1,6 @@
 <template>
     <el-container>
-    <el-header>
+    <el-header height="" padding="">
         <default-header />
     </el-header>
     <el-main>Main</el-main>
@@ -16,7 +16,7 @@ export default {
 }
 </script>
 <style scoped>
-    *{
-        color:red;
-    }
+   .el-header{
+       padding:0;
+   }
 </style>

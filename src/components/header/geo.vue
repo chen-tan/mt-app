@@ -1,12 +1,13 @@
 <template>
     <div class="top-geo">
-        <i class="el-icon-location-outline" />
+        <i class="el-icon-location-outline icon-location" />
         <span>{{ curGeo.city }}</span>
-        <router-link to="/switchCity">切换城市</router-link>
+        <router-link to="/switchCity" class="switchCity">切换城市</router-link>
         [
             <router-link 
              v-for="neigbor in curGeo.neigbors"
              :key="neigbor"
+             class="neigbor"
              to="/"
             >{{ neigbor }}</router-link>
         ]
@@ -24,3 +25,7 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+    @import '~@/assets/css/header/geo.scss';
+</style>

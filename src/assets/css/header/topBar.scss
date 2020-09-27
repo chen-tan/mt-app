@@ -1,0 +1,182 @@
+.top-bar{
+    width:100%;
+    height:40px;
+    background-color: #f8f8f8;
+    color:#999;
+    font-size:12px;
+    .top-geo{
+        margin-left:163px;
+        height:28px;
+        padding-top:12px;
+        .icon-location{
+            font-size:14px;
+        }
+        span{
+            color:#666;
+            margin-left:2px;
+            margin-right:3px;
+        }
+        .switchCity{
+            padding:0 2px;
+            color:#666;
+            border:1px solid #e5e5e5;
+            border-radius:3px;
+            box-sizing: border-box;
+            margin:0 4px;
+        }
+        .neigbor{
+            margin:0 4px;
+            color:#999;
+        }
+    }
+    .top-nav{
+        position:relative;
+        .nav-list{
+            display:flex;
+            justify-content: flex-end;
+            margin-right:164px;
+            .nav{
+                height:40px;
+                padding:12px 14px;
+                box-sizing:border-box;
+                border-left:1px solid transparent;
+                border-right:1px solid transparent;
+                &:hover{
+                    background-color:#fff;
+                    color:#fe8c00;
+                    border-color:#e5e5e5;
+                    box-shadow:0 3px 5px 0 rgba(0,0,0,.1);
+                }
+            }
+        }
+        .my-mt{
+            position:absolute;
+            right:475px;
+            top:40px;
+            box-sizing: border-box;
+            width:78px;
+            border:1px solid #e5e5e5;
+            border-top:none;
+            border-radius:0 0 3px 3px;
+            li{
+                text-align:center;
+                height: 30px;
+                line-height:30px;
+            }
+        }
+        .business-center{
+            position:absolute;
+            right:320;
+            top:40px;
+            width:110px;
+            border:1px solid hsl(0, 0%, 90%);
+            border-top:none;
+            border-radius:0 0 3px 3px;
+            li{
+                height:30px;
+                line-height:30px;
+                text-align:center;
+
+            }
+        }
+        .rules{
+            position:absolute;
+            right:242px;
+            top:40px;
+            box-sizing: border-box;
+            width:78px;
+            border:1px solid #e5e5e5;
+            border-top:none;
+            border-radius:0 0 3px 3px;
+            li{
+                height:30px;
+                line-height:30px;
+                text-align:center;
+            }
+        }
+        .website{
+            display:flex;
+
+            position:absolute;
+            right:164px;
+            top:40px;
+            box-sizing: border-box;
+            width:1200px;
+            padding:30px 36px 36px 47px;
+            border:1px solid #e5e5e5;
+            border-top:none;
+            border-radius:0 0 3px 3px;
+            dl::after{
+                content:'';
+                display:inline-block;
+                clear:both;
+            }
+            dt{
+                font-size:14px;
+                color:#222;
+                font-weight:500;
+            }
+            .jiulv{
+                width:234px;
+                margin-right:47px;
+                dt{
+                    text-align:center;
+                    margin-bottom:26px;
+                }
+                dd{
+                    width:74px;
+                    float:left;
+                    padding:5px 0;
+                    margin:5px 2px;
+                    text-align:center;
+                }
+            }
+            .food{
+                width:156px;
+                margin-right:47px;
+                dt{
+                    margin-bottom:26px;
+                    text-align:center;
+                }
+                dd{
+                    width:74px;
+                    float:left;
+                    margin:5px 2px;
+                    padding:5px 0;
+                    text-align:center;
+                }
+            }
+            .movie{
+                width:90px;
+                margin-right:47px;
+                dt{
+                    text-align:center;
+                    margin-bottom:26px;
+                }
+                dd{
+                    width:86px;
+                    padding:5px 0;
+                    margin:5px 2px;
+                    text-align:center;
+                    float:left;
+                }
+            }
+            .app{
+                width:450px;
+                text-align:center;
+                dt{
+                    margin-bottom:26px;
+                }
+                dd{
+                    float:left;
+                    margin:15px;
+                    img{
+                        width:60px;
+                        height:60px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
