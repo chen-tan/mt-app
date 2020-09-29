@@ -19,4 +19,7 @@ export default {
 
 <style>
   @import '~@/assets/css/reset.css'; 
+  body{
+    overflow-y:scroll;
+  }
 </style>

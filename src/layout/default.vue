@@ -15,8 +15,18 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style scoped>  
+    html,body{
+        height:100vh;
+        overflow-y: scroll;
+        background-color:red;
+    }
+    body{
+        overflow-y: scroll;
+        background-color:red;
+    }
    .el-header{
        padding:0;
+
    }
 </style>
