@@ -4,14 +4,18 @@
         <default-header />
     </el-header>
     <el-main>Main</el-main>
-    <el-footer>Footer</el-footer>
+    <el-footer>
+        <default-footer />
+    </el-footer>
 </el-container>
 </template>
 <script>
-import DefaultHeader from '../components/header/index.vue';
+import DefaultHeader from '@/components/header/index.vue';
+import DefaultFooter from '@/components/footer/footer.vue';
 export default {
     components:{
-        DefaultHeader
+        DefaultHeader,
+        DefaultFooter
     }
 }
 </script>

@@ -1,13 +1,17 @@
 .search-bar{
+    height:158px;
+    background-color: violet;
+    box-sizing:border-box;
     position:relative;
-    margin-top:35px;
+    padding-top:35px;
     .search-area{
         display:flex;
+        position: relative;
         .logo{
             width:126px;
-            height:46px;
-            margin-left:176px;
-            margin-right:194px;
+            height:48px;
+            position:absolute;
+            left:11%;
             img{
                 width:126px;
                 height:46px;
@@ -15,12 +19,21 @@
         }
         .input-area{
             display:flex;
+            align-items: center;
+            height:48px;
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
             .el-input{
                 width:480px;
-                height:48px;
+                height:40px;
                 input{
                     border-top-right-radius: 0px;
                     border-bottom-right-radius: 0px;
+                    outline:none;
+                    &:focus{
+                        border-color:#e5e5e5;
+                    }
                 }
             }
                 button{
@@ -33,15 +46,17 @@
     }
     .recent-search{
         position: relative;
-        width:479px;
+        z-index:10;
+        width:478px;
         padding:10px 8px;
+        background-color:#fff;
         border:1px solid #e5e5e5;
         border-top:none;
         border-radius:3px;
         font-size:12px;
         position:absolute;
-        left:496px;
-        top:40px;
+        left:476px;
+        top:79px;
         h6{
             color:#999;
             font-weight:bold;
@@ -54,13 +69,45 @@
             color:#999;
         }
         .recent-list{
-             display:flex;
              .recent{
+                 height:20px;
                  padding:2px 3px;
                  margin:0 2px;
+                 cursor:pointer;
              }   
         }
     }
-    
-    
+    .hotWord-list{
+        position:absolute;
+        z-index:10;
+        left:476px;
+        top:79px;
+        width:460px;
+        padding:10px 8px;
+        background-color:#fff;
+        border:1px solid #e5e5e5;
+        border-top:none;
+        border-radius:3px;
+        font-size:12px;
+        li{
+            height:20px;
+            &:hover{
+                color:#FE8C00;
+                cursor:pointer;
+            }
+        }
+    }
+    .typeList{
+        display:flex;
+        margin-bottom:10px;
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+        li{
+            margin:10px 24px;
+            font-weight:900;
+            font-size:16px;
+        }
+    }
 }
