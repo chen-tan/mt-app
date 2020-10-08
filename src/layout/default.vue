@@ -3,7 +3,9 @@
     <el-header height="" padding="">
         <default-header />
     </el-header>
-    <el-main>Main</el-main>
+    <el-main>
+        <router-view></router-view>
+    </el-main>
     <el-footer>
         <default-footer />
     </el-footer>
@@ -12,10 +14,12 @@
 <script>
 import DefaultHeader from '@/components/header/index.vue';
 import DefaultFooter from '@/components/footer/footer.vue';
+import DefaultMain from '@/components/index/index.vue';
 export default {
     components:{
         DefaultHeader,
-        DefaultFooter
+        DefaultFooter,
+        DefaultMain
     }
 }
 </script>
@@ -23,14 +27,15 @@ export default {
     html,body{
         height:100vh;
         overflow-y: scroll;
-        background-color:red;
     }
     body{
         overflow-y: scroll;
-        background-color:red;
     }
    .el-header{
        padding:0;
-
    }
+    .el-main{
+        padding:0;
+        background-color:#c5c5c5;
+    }
 </style>

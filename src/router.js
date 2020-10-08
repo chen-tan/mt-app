@@ -5,9 +5,19 @@ Vue.use(VueRouter);
 
 const routes=[
     {
+        path:'/',
+        redirect:'/default/index'
+    },
+    {
         path:'/default',
         name:'default',
-        component:DefaultPage
+        component:DefaultPage,
+        children:[
+            {
+                path:'index',
+                component:()=>import('./components/index/index.vue')
+            }
+        ]
     },
     {
         path:'/blank',

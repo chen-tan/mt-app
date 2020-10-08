@@ -9,6 +9,7 @@ import axios from './axios.js';
 Vue.config.productionTip = false
 
 Vue.prototype.$axios=axios;
+
 Vue.use(ElementUI, { locale })
 new Vue({
   router,
