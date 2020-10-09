@@ -1,10 +1,10 @@
 <template>
     <div class="default-main">
-        <index-nav />
+            <index-nav />
     </div>
 </template>
 <script>
-import IndexNav from './nav.vue';
+import IndexNav from '@/components/index/nav.vue';
 export default {
     components:{
         IndexNav
@@ -12,5 +12,5 @@ export default {
 }
 </script>
 <style lang="scss">
-    @import "~@/assets/css/index/idnex.scss";
+    @import "~@/assets/css/index/index.scss";
 </style>

@@ -6,16 +6,13 @@ Vue.use(VueRouter);
 const routes=[
     {
         path:'/',
-        redirect:'/default/index'
-    },
-    {
-        path:'/default',
-        name:'default',
+        name:'defaultPage',
         component:DefaultPage,
         children:[
             {
-                path:'index',
-                component:()=>import('./components/index/index.vue')
+                path:'/index',
+                name:'index',
+                component:()=>import('@/page/index.vue')
             }
         ]
     },
@@ -25,6 +22,7 @@ const routes=[
         component:()=>import('@/layout/blank.vue')
     }
 ]
+    
 
 export default new VueRouter({
     routes,

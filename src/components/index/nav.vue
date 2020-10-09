@@ -1,7 +1,7 @@
 <template>
     <div class="nav-container">
         <div class="index-nav">
-            <dl class="al-calssify">
+            <dl class="all-calssify">
                 <dt>全部分类</dt>
                 <dd
                 v-for="nav in navList"
@@ -9,11 +9,11 @@
                 class="calssify"
                 >
                     <div class="nav-bar">
-                        <i :class="nav.type"></i>
+                        <i class="iconfont" :class="nav.type"></i>
                         <span>{{ nav.name }}</span>
-                        <i class="el-icon-arrow-right"></i>
+                        <i class="icon-arrow el-icon-arrow-right"></i>
                     </div>
-                    <div class="nav-panel">
+                    <div class="nav-panel" v-if="showPanel">
                         <div
                         v-for="block in nav.items" 
                         :key="block.name"
@@ -47,6 +47,7 @@ export default {
     data(){
         return {
             navList:[],
+            showPanel:false,
         }
     },
     created(){
