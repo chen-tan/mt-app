@@ -30,7 +30,7 @@ export default {
    }
     .el-main{
         padding:0;
-        background-color:#c5c5c5;
+        background-color:#f8f8f8;
         overflow:unset;
     }
 

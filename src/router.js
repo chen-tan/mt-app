@@ -8,6 +8,7 @@ const routes=[
         path:'/',
         name:'defaultPage',
         component:DefaultPage,
+        redirect:'/index',
         children:[
             {
                 path:'/index',
